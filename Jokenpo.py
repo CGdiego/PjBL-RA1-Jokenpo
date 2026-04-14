@@ -1,8 +1,9 @@
 import random
+import pyfiglet
 j1 = 0
 j2 = 0
 
-print("Bem vindo ao Jokenpô!\n")
+print(pyfiglet.figlet_format("Jokenpo", font="larry3d"))
 
 print("1. Humano X Humano")
 print("2. Humano X Computador")

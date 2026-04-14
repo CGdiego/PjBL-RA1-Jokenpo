@@ -1,7 +1,7 @@
 import random 
 import pyfiglet
-j1 = 0
-j2 = 0
+j1 = ""
+j2 = ""
 
 print(pyfiglet.figlet_format("Jokenpo", font="larry3d")) # Título usando biblioteca "pyfiglet"
 
@@ -18,14 +18,14 @@ print("\033[H\033[J", end="") # Limpa a tela do terminal
 if modalidade == 1:
     while j1 != "pedra" and j1 != "papel" and j1 != "tesoura":
         j1 = input("Jogador 1, escolha 'pedra', 'papel', ou 'tesoura': ").lower()
-        if j1 != "pedra" or j1 != "papel" or j1 != "tesoura":
+        if j1 != "pedra" and j1 != "papel" and j1 != "tesoura":
             print("Não é uma possibilidade, insira novamente.\n")
 
     print("\033[H\033[J", end="") # Limpa a tela do terminal
 
     while j2 != "pedra" and j2 != "papel" and j2 != "tesoura":
         j2 = input("Jogador 2, escolha 'pedra', 'papel', ou 'tesoura': ").lower()
-        if j2 != "pedra" or j2 != "papel" or j2 != "tesoura":
+        if j2 != "pedra" and j2 != "papel" and j2 != "tesoura":
             print("Não é uma possibilidade, insira novamente.\n")
 
     print("\033[H\033[J", end="") # Limpa a tela do terminal

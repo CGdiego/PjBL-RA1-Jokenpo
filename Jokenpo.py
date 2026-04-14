@@ -1,9 +1,9 @@
-import random
+import random 
 import pyfiglet
 j1 = 0
 j2 = 0
 
-print(pyfiglet.figlet_format("Jokenpo", font="larry3d"))
+print(pyfiglet.figlet_format("Jokenpo", font="larry3d")) # Título usando biblioteca "pyfiglet"
 
 print("1. Humano X Humano")
 print("2. Humano X Computador")

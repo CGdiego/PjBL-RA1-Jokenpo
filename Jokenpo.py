@@ -2,6 +2,8 @@ import random
 import pyfiglet
 j1 = ""
 j2 = ""
+modalidade = 0
+repeat = 0
 
 print(pyfiglet.figlet_format("Jokenpo", font="larry3d")) # Título usando biblioteca "pyfiglet"
 
@@ -11,7 +13,10 @@ print("3. Computador X Computador")
 print("4. Secreto1")
 print("5. Secreto2\n")
 
-modalidade = int(input("Escolha uma modalidade (1-5): "))
+while modalidade < 1 or modalidade > 5:
+    modalidade = int(input("Escolha uma modalidade (1-5): "))
+    if modalidade < 1 or modalidade > 5:
+        print("Não é uma possibilidade, insira novamente.\n")
 
 print("\033[H\033[J", end="") # Limpa a tela do terminal
 
@@ -50,3 +55,8 @@ if modalidade == 1:
         print("O jogador 2 venceu!")
     elif j1 == "tesoura" and j2 == "papel":
         print("O jogador 1 venceu!")
+
+    while repeat != "s" and repeat != "n":
+        repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
+        if repeat != "s" and repeat != "n":
+            print("Não é uma possibilidade, insira novamente.")

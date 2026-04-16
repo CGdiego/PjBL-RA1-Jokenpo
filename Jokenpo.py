@@ -30,14 +30,14 @@ if modalidade == 1:
     while repeatF == "s":
         repeat = ""
         while j1 != "1" and j1 != "2" and j1 != "3":
-            j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n").lower()
+            j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
             if j1 != "1" and j1 != "2" and j1 != "3":
                 print("Não é uma possibilidade, insira novamente.\n")
 
         print("\033[H\033[J", end="") # Limpa a tela do terminal
 
         while j2 != "1" and j2 != "2" and j2 != "3":
-            j2 = input("Jogador 2, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n").lower()
+            j2 = input("Jogador 2, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
             if j2 != "1" and j2 != "2" and j2 != "3":
                 print("Não é uma possibilidade, insira novamente.\n")
 
@@ -107,7 +107,7 @@ if modalidade == 2:
     while repeatF == "s":
         repeat = ""
         while j1 != "1" and j1 != "2" and j1 != "3":
-            j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n").lower()
+            j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
             if j1 != "1" and j1 != "2" and j1 != "3":
                 print("Não é uma possibilidade, insira novamente.\n")
 

@@ -19,14 +19,14 @@ print("3. Computador X Computador")
 print("4. Secreto1")
 print("5. Secreto2\n")
 
-while modalidade < 1 or modalidade > 5:
-    modalidade = int(input("Escolha uma modalidade (1-5): "))
-    if modalidade < 1 or modalidade > 5:
+while modalidade != "1" and modalidade != "2" and modalidade != "3" and modalidade != "4" and modalidade != "5":
+    modalidade = (input("Escolha uma modalidade (1-5): "))
+    if modalidade != "1" and modalidade != "2" and modalidade != "3" and modalidade != "4" and modalidade != "5":
         print("Não é uma possibilidade, insira novamente.\n")
 
 print("\033[H\033[J", end="") # Limpa a tela do terminal
 
-if modalidade == 1:
+if modalidade == "1":
     while repeatF == "s":
         repeat = ""
         while j1 != "1" and j1 != "2" and j1 != "3":
@@ -103,11 +103,11 @@ if modalidade == 1:
             else:
                 print("Não é uma possibilidade, insira novamente.")
 
-if modalidade == 2:
+elif modalidade == "2":
     while repeatF == "s":
         repeat = ""
         while j1 != "1" and j1 != "2" and j1 != "3":
-            j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
+            j1 = input("Jogador, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
             if j1 != "1" and j1 != "2" and j1 != "3":
                 print("Não é uma possibilidade, insira novamente.\n")
 
@@ -121,28 +121,28 @@ if modalidade == 2:
         if j1 == "1" and j2 == "1":
             print("O jogo empatou.")
         elif j1 == "1" and j2 == "2":
-            print("O jogador 2 venceu!")
+            print("O computador venceu!")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
-            print("O jogador 1 venceu!")
+            print("O jogador venceu!")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
             print("O jogo empatou.")
         elif j1 == "2" and j2 == "1":
-            print("O jogador 1 venceu!")
+            print("O jogador venceu!")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
-            print("O jogador 2 venceu!")
+            print("O computador venceu!")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
             print("O jogo empatou.")
         elif j1 == "3" and j2 == "1":
-            print("O jogador 2 venceu!")
+            print("O computador venceu!")
             vJ2 += 1
         else:
-            print("O jogador 1 venceu!")
+            print("O jogador venceu!")
             vJ1 += 1
 
         if j1 == "1":
@@ -159,7 +159,7 @@ if modalidade == 2:
         else:
             nome2 = "tesoura"
 
-        print(f"O jogador 1 escolheu {nome1} e o jogador 2 escolheu {nome2}.")
+        print(f"O jogador escolheu {nome1} e o computador escolheu {nome2}.")
 
         while repeat != "s" and repeat != "n":
             repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
@@ -171,7 +171,80 @@ if modalidade == 2:
             elif repeat == "n":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(pyfiglet.figlet_format("Placar\n", font="alligator")) # Título usando biblioteca "pyfiglet"
-                print(f"               O jogador 1 obteve {vJ1} pontos.\n               O jogador 2 obteve {vJ2} pontos.")
+                print(f"               O jogador obteve {vJ1} pontos.\n               O computador obteve {vJ2} pontos.")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")
+            else:
+                print("Não é uma possibilidade, insira novamente.")
+
+elif modalidade == "3":
+    while repeatF == "s":
+        repeat = ""
+        j1 = random.randint(1, 3)
+        j1 = str(j1)
+
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+
+        j2 = random.randint(1, 3)
+        j2 = str(j2)
+
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+
+        if j1 == "1" and j2 == "1":
+            print("O jogo empatou.")
+        elif j1 == "1" and j2 == "2":
+            print("O computador 2 venceu!")
+            vJ2 += 1
+        elif j1 == "1" and j2 == "3":
+            print("O computador 1 venceu!")
+            vJ1 += 1
+
+        elif j1 == "2" and j2 == "2":
+            print("O jogo empatou.")
+        elif j1 == "2" and j2 == "1":
+            print("O computador 1 venceu!")
+            vJ1 += 1
+        elif j1 == "2" and j2 == "3":
+            print("O computador 2 venceu!")
+            vJ2 += 1
+
+        elif j1 == "3" and j2 == "3":
+            print("O jogo empatou.")
+        elif j1 == "3" and j2 == "1":
+            print("O computador 2 venceu!")
+            vJ2 += 1
+        else:
+            print("O computador 1 venceu!")
+            vJ1 += 1
+
+        if j1 == "1":
+            nome1 = "pedra"
+        elif j1 == "2":
+            nome1 = "papel"
+        else:
+            nome1 = "tesoura"
+
+        if j2 == "1":
+            nome2 = "pedra"
+        elif j2 == "2":
+            nome2 = "papel"
+        else:
+            nome2 = "tesoura"
+
+        print(f"O computador 1 escolheu {nome1} e o computador 2 escolheu {nome2}.")
+
+        while repeat != "s" and repeat != "n":
+            repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
+            repeatF = repeat
+            if repeat == "s":
+                j1 = 0
+                j2 = 0
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+            elif repeat == "n":
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print(pyfiglet.figlet_format("Placar\n", font="alligator")) # Título usando biblioteca "pyfiglet"
+                print(f"               O computador 1 obteve {vJ1} pontos.\n               O computador 2 obteve {vJ2} pontos.")
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")

@@ -85,6 +85,9 @@ if modalidade == "1":
             nome2 = "tesoura"
 
         print(f"O jogador 1 escolheu {nome1} e o jogador 2 escolheu {nome2}.")
+        print("")
+        print(pyfiglet.figlet_format("Placar Atual\n", font="chunky")) # Título usando biblioteca "pyfiglet"
+        print(f"             O jogador 1 tem {vJ1} ponto(s) atualmente.\n             O jogador 2 tem {vJ2} ponto(s) atualmente.")
 
         while repeat != "s" and repeat != "n":
             repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
@@ -95,8 +98,8 @@ if modalidade == "1":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
             elif repeat == "n":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(pyfiglet.figlet_format("Placar\n", font="alligator")) # Título usando biblioteca "pyfiglet"
-                print(f"               O jogador 1 obteve {vJ1} pontos.\n               O jogador 2 obteve {vJ2} pontos.")
+                print(pyfiglet.figlet_format("Placar Final\n", font="alligator")) # Título usando biblioteca "pyfiglet"
+                print(f"          O jogador 1 obteve {vJ1} ponto(s).\n          O jogador 2 obteve {vJ2} ponto(s).")
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")
@@ -160,6 +163,9 @@ elif modalidade == "2":
             nome2 = "tesoura"
 
         print(f"O jogador escolheu {nome1} e o computador escolheu {nome2}.")
+        print("")
+        print(pyfiglet.figlet_format("Placar Atual\n", font="chunky")) # Título usando biblioteca "pyfiglet"
+        print(f"             O jogador tem {vJ1} ponto(s) atualmente.\n             O computador tem {vJ2} ponto(s) atualmente.")
 
         while repeat != "s" and repeat != "n":
             repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
@@ -170,8 +176,8 @@ elif modalidade == "2":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
             elif repeat == "n":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(pyfiglet.figlet_format("Placar\n", font="alligator")) # Título usando biblioteca "pyfiglet"
-                print(f"               O jogador obteve {vJ1} pontos.\n               O computador obteve {vJ2} pontos.")
+                print(pyfiglet.figlet_format("Placar Final\n", font="alligator")) # Título usando biblioteca "pyfiglet"
+                print(f"          O jogador obteve {vJ1} ponto(s).\n          O computador obteve {vJ2} ponto(s).")
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")
@@ -233,6 +239,9 @@ elif modalidade == "3":
             nome2 = "tesoura"
 
         print(f"O computador 1 escolheu {nome1} e o computador 2 escolheu {nome2}.")
+        print("")
+        print(pyfiglet.figlet_format("Placar Atual\n", font="chunky")) # Título usando biblioteca "pyfiglet"
+        print(f"             O computador 1 tem {vJ1} ponto(s) atualmente.\n             O computador 2 tem {vJ2} ponto(s) atualmente.")
 
         while repeat != "s" and repeat != "n":
             repeat = input("\nGostaria de jogar novamente? (s/n)\n").lower()
@@ -243,8 +252,8 @@ elif modalidade == "3":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
             elif repeat == "n":
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(pyfiglet.figlet_format("Placar\n", font="alligator")) # Título usando biblioteca "pyfiglet"
-                print(f"               O computador 1 obteve {vJ1} pontos.\n               O computador 2 obteve {vJ2} pontos.")
+                print(pyfiglet.figlet_format("Placar Final\n", font="alligator")) # Título usando biblioteca "pyfiglet"
+                print(f"          O computador 1 obteve {vJ1} ponto(s).\n          O computador 2 obteve {vJ2} ponto(s).")
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")

@@ -7,12 +7,12 @@ import winsound
 
 musica = random.randint(1, 3)
 
-if musica == 1:
-    winsound.PlaySound("sounds/music.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
-elif musica == 2:
-    winsound.PlaySound("sounds/music2.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
-else:
-    winsound.PlaySound("sounds/music3.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+# if musica == 1:
+#     winsound.PlaySound("sounds/music.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+# elif musica == 2:
+#     winsound.PlaySound("sounds/music2.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+# else:
+#     winsound.PlaySound("sounds/music3.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
 
 j1 = 0
 nome1 = ""
@@ -20,6 +20,14 @@ vJ1 = 0
 j2 = 0
 nome2 = ""
 vJ2 = 0
+j3 = 0
+nome3 = ""
+j4 = 0
+nome4 = ""
+equipe1 = ""
+equipe2 = ""
+vEquipe1 = 0
+vEquipe2 = 0
 
 quantJog = 0
 pedra = 0
@@ -556,7 +564,114 @@ elif modalidade == "3":
                 print("Não é uma possibilidade, insira novamente.")
 
 
-# ADICIONAR O 2v2 AQUI!!!!
+# Modo 2v2
+elif modalidade == "4":
+    while repeatF == "s":
+
+        j1=""
+        while j1!="1" and j1!="2" and j1!="3":
+            j1 = input("Jogador 1 (1 Pedra 2 Papel 3 Tesoura): ")
+        print("\033[H\033[J", end="")
+
+        j2=""
+        while j2!="1" and j2!="2" and j2!="3":
+            j2 = input("Jogador 2 (1 Pedra 2 Papel 3 Tesoura): ")
+        print("\033[H\033[J", end="")
+
+        j3=""
+        while j3!="1" and j3!="2" and j3!="3":
+            j3 = input("Jogador 3 (1 Pedra 2 Papel 3 Tesoura): ")
+        print("\033[H\033[J", end="")
+
+        j4=""
+        while j4!="1" and j4!="2" and j4!="3":
+            j4 = input("Jogador 4 (1 Pedra 2 Papel 3 Tesoura): ")
+        print("\033[H\033[J", end="")
+
+        print("TIME 1 ESCOLHE ALVOS")
+        alvoJ1 = input("J1 ataca (1)J3 ou (2)J4: ")
+        alvoJ2 = input("J2 ataca (1)J3 ou (2)J4: ")
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+
+        print("\nTIME 2 ESCOLHE ALVOS")
+        alvoJ3 = input("J3 ataca (1)J1 ou (2)J2: ")
+        alvoJ4 = input("J4 ataca (1)J1 ou (2)J2: ")
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+
+        vivoJ1 = True
+        vivoJ2 = True
+        vivoJ3 = True
+        vivoJ4 = True
+
+        # J1 escolhe quem ataca
+        if alvoJ1 == "1":
+            if j1 != j3 and not ((j1=="1" and j3=="3") or (j1=="2" and j3=="1") or (j1=="3" and j3=="2")):
+                vivoJ1 = False
+            elif (j1=="1" and j3=="3") or (j1=="2" and j3=="1") or (j1=="3" and j3=="2"):
+                vivoJ3 = False
+        else:
+            if j1 != j4 and not ((j1=="1" and j4=="3") or (j1=="2" and j4=="1") or (j1=="3" and j4=="2")):
+                vivoJ1 = False
+            elif (j1=="1" and j4=="3") or (j1=="2" and j4=="1") or (j1=="3" and j4=="2"):
+                vivoJ4 = False
+
+        # J2 escolhe quem ataca
+        if alvoJ2 == "1":
+            if j2 != j3 and not ((j2=="1" and j3=="3") or (j2=="2" and j3=="1") or (j2=="3" and j3=="2")):
+                vivoJ2 = False
+            elif (j2=="1" and j3=="3") or (j2=="2" and j3=="1") or (j2=="3" and j3=="2"):
+                vivoJ3 = False
+        else:
+            if j2 != j4 and not ((j2=="1" and j4=="3") or (j2=="2" and j4=="1") or (j2=="3" and j4=="2")):
+                vivoJ2 = False
+            elif (j2=="1" and j4=="3") or (j2=="2" and j4=="1") or (j2=="3" and j4=="2"):
+                vivoJ4 = False
+
+        # J3 escolhe quem ataca
+        if alvoJ3 == "1":
+            if j3 != j1 and not ((j3=="1" and j1=="3") or (j3=="2" and j1=="1") or (j3=="3" and j1=="2")):
+                vivoJ3 = False
+            elif (j3=="1" and j1=="3") or (j3=="2" and j1=="1") or (j3=="3" and j1=="2"):
+                vivoJ1 = False
+        else:
+            if j3 != j2 and not ((j3=="1" and j2=="3") or (j3=="2" and j2=="1") or (j3=="3" and j2=="2")):
+                vivoJ3 = False
+            elif (j3=="1" and j2=="3") or (j3=="2" and j2=="1") or (j3=="3" and j2=="2"):
+                vivoJ2 = False
+
+        # J4 escolhe quem ataca
+        if alvoJ4 == "1":
+            if j4 != j1 and not ((j4=="1" and j1=="3") or (j4=="2" and j1=="1") or (j4=="3" and j1=="2")):
+                vivoJ4 = False
+            elif (j4=="1" and j1=="3") or (j4=="2" and j1=="1") or (j4=="3" and j1=="2"):
+                vivoJ1 = False
+        else:
+            if j4 != j2 and not ((j4=="1" and j2=="3") or (j4=="2" and j2=="1") or (j4=="3" and j2=="2")):
+                vivoJ4 = False
+            elif (j4=="1" and j2=="3") or (j4=="2" and j2=="1") or (j4=="3" and j2=="2"):
+                vivoJ2 = False
+
+        print("\nMortos:")
+        if not vivoJ1: print("J1 morreu")
+        if not vivoJ2: print("J2 morreu")
+        if not vivoJ3: print("J3 morreu")
+        if not vivoJ4: print("J4 morreu")
+
+        time1_vivos = vivoJ1 + vivoJ2
+        time2_vivos = vivoJ3 + vivoJ4
+
+        if time1_vivos > time2_vivos:
+            print("TIME 1 venceu")
+            vEquipe1 += 1
+        elif time2_vivos > time1_vivos:
+            print("TIME 2 venceu")
+            vEquipe2 += 1
+        else:
+            print("Empate")
+
+        repeatF = input("\nOutra rodada? (s/n): ")
+
+#Modo Battle-Royale
 
 else:
     while repeatF == "s":

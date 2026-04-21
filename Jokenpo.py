@@ -570,35 +570,29 @@ elif modalidade == "3":
 elif modalidade == "4":
     while repeatF == "s":
 
-        j1=""
+        print("TIME 1")
+
         while j1!="1" and j1!="2" and j1!="3":
-            j1 = input("Jogador 1 (1 Pedra 2 Papel 3 Tesoura): ")
-        print("\033[H\033[J", end="")
-
-        j2=""
-        while j2!="1" and j2!="2" and j2!="3":
-            j2 = input("Jogador 2 (1 Pedra 2 Papel 3 Tesoura): ")
-        print("\033[H\033[J", end="")
-
-        j3=""
-        while j3!="1" and j3!="2" and j3!="3":
-            j3 = input("Jogador 3 (1 Pedra 2 Papel 3 Tesoura): ")
-        print("\033[H\033[J", end="")
-
-        j4=""
-        while j4!="1" and j4!="2" and j4!="3":
-            j4 = input("Jogador 4 (1 Pedra 2 Papel 3 Tesoura): ")
-        print("\033[H\033[J", end="")
-
-        print("TIME 1 ESCOLHE ALVOS")
+            j1 = input("J1 escolha (1 Pedra 2 Papel 3 Tesoura): ")
         alvoJ1 = input("J1 ataca (1)J3 ou (2)J4: ")
-        alvoJ2 = input("J2 ataca (1)J3 ou (2)J4: ")
-        print("\033[H\033[J", end="") # Limpa a tela do terminal
+        print("\033[H\033[J", end="")
 
-        print("\nTIME 2 ESCOLHE ALVOS")
+        while j2!="1" and j2!="2" and j2!="3":
+            j2 = input("J2 escolha (1 Pedra 2 Papel 3 Tesoura): ")
+        alvoJ2 = input("J2 ataca (1)J3 ou (2)J4: ")
+        print("\033[H\033[J", end="")
+
+        print("TIME 2")
+
+        while j3!="1" and j3!="2" and j3!="3":
+            j3 = input("J3 escolha (1 Pedra 2 Papel 3 Tesoura): ")
         alvoJ3 = input("J3 ataca (1)J1 ou (2)J2: ")
+        print("\033[H\033[J", end="")
+
+        while j4!="1" and j4!="2" and j4!="3":
+            j4 = input("J4 escolha (1 Pedra 2 Papel 3 Tesoura): ")
         alvoJ4 = input("J4 ataca (1)J1 ou (2)J2: ")
-        print("\033[H\033[J", end="") # Limpa a tela do terminal
+        print("\033[H\033[J", end="")
 
         vivoJ1 = True
         vivoJ2 = True
@@ -672,6 +666,15 @@ elif modalidade == "4":
             print("Empate")
 
         repeatF = input("\nOutra rodada? (s/n): ")
+    else:
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+        print(pyfiglet.figlet_format("Placar Final\n", font="alligator")) # Título usando biblioteca "pyfiglet"
+        print(f"          A equipe 1 obteve {vEquipe1} ponto(s).\n          A equipe 2 obteve {vEquipe2} ponto(s).")
+        time.sleep(5)
+        print("\033[H\033[J", end="") # Limpa a tela do terminal
+        print("Muito obrigado por jogar!\nFeito por Daniel Godri, Diego Soares e João Victor M. B.")
+    
+
 
 # Modo Battle Royale
 else:

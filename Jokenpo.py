@@ -1,3 +1,5 @@
+print("\033[H\033[J", end="") # Limpa a tela do terminal
+
 import time
 import random
 import pyfiglet
@@ -58,29 +60,119 @@ if modalidade == "1":
         print("\033[H\033[J", end="") # Limpa a tela do terminal
 
         if j1 == "1" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✊      ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "1" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 2 venceu!")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✊      ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 1 venceu!")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "2" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 1 venceu!")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 2 venceu!")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✌       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "3" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✌       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 2 venceu!")
             vJ2 += 1
         else:
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O            O\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O            O\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador 1 venceu!")
             vJ1 += 1
 
@@ -137,29 +229,119 @@ elif modalidade == "2":
         print("\033[H\033[J", end="") # Limpa a tela do terminal
 
         if j1 == "1" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✊      ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "1" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador venceu!")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✊      ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador venceu!")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "2" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador venceu!")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador venceu!")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✌       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "3" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✌       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador venceu!")
             vJ2 += 1
         else:
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("   O           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("   O           📺\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogador venceu!")
             vJ1 += 1
 
@@ -214,29 +396,119 @@ elif modalidade == "3":
         print("\033[H\033[J", end="") # Limpa a tela do terminal
 
         if j1 == "1" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✊      ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "1" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 2 venceu!")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✊      ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 1 venceu!")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "2" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 1 venceu!")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 2 venceu!")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✌       ✌ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O jogo empatou.")
         elif j1 == "3" and j2 == "1":
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✌       ✊/|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 2 venceu!")
             vJ2 += 1
         else:
+            for i in range(5):
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|\          /|\ \n  / \          / \ ")
+                time.sleep(0.2)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("  📺           📺\n  /|/          \|\ \n  / \          / \ ")
+                time.sleep(0.2)
+            print("\033[H\033[J", end="") # Limpa a tela do terminal
+            print("  📺           📺\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
+            time.sleep(0.5)
             print("O computador 1 venceu!")
             vJ1 += 1
 

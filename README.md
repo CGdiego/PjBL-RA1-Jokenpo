@@ -1,5 +1,4 @@
 <h1 align="center">PjBL RA1 - Jokenpô</h1>
-<p align="center">PUCPR (2026/1)</p>
 
 <div align="center">
 
@@ -7,3 +6,5 @@
 ![python](https://img.shields.io/badge/python-3.13-3776AB?style=default&logo=python&logoColor=white)
 
 </div>
+
+<p align="center">PUCPR (2026/1)</p>

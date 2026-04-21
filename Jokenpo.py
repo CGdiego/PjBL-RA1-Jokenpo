@@ -1,6 +1,9 @@
 import time
 import random
 import pyfiglet
+import winsound
+
+winsound.PlaySound("sounds/music.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
 
 j1 = 0
 nome1 = ""

@@ -1,5 +1,5 @@
 - Animação de ASCII do stickman jogando Jokenpô.
-- Efeitos sonoros (usando playsound por exemplo).
+- Efeitos sonoros (talvez não, porque daí teria que usar pygame ao invés de winsound, então teria que fazer pip install da biblioyteca no pc que queira usar).
 - Texto colorido.
 - Battle royale: vai passando o PC para cada um da sala. Tem 3 times, pedra, papel e tesoura, cada pessoa escolhe 1. Se pedra ganhar, tesoura morre. Se papel ganhar, pedra morre. Se tesoura ganhar, papel morre. O time que tiver mais pessoas vence. Antes de começar o jogo, o adm escolhe quantos jogadores vai jogar. Vai ter animação de victory royale em ASCII pro vencedor.
 - Modo 2v2.

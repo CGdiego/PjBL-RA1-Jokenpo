@@ -5,7 +5,14 @@ import random
 import pyfiglet
 import winsound
 
-winsound.PlaySound("sounds/music.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+musica = random.randint(1, 3)
+
+if musica == 1:
+    winsound.PlaySound("sounds/music.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+elif musica == 2:
+    winsound.PlaySound("sounds/music2.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+else:
+    winsound.PlaySound("sounds/music3.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
 
 j1 = 0
 nome1 = ""

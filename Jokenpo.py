@@ -388,7 +388,7 @@ else:
 
             pseudonimoF = input("Insira seu nome: ")
             while j2 != "1" and j2 != "2" and j2 != "3":
-                j2 = input("Jogador 2, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
+                j2 = input(f"\n{pseudonimoF}, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
                 if j2 != "1" and j2 != "2" and j2 != "3":
                     print("Não é uma possibilidade, insira novamente.\n")
 
@@ -397,23 +397,23 @@ else:
             if j1 == "1" and j2 == "1":
                 print("O jogo empatou.")
             elif j1 == "1" and j2 == "2":
-                print("O jogador 2 venceu!")
+                print(f"O {pseudonimoF} venceu!")
             elif j1 == "1" and j2 == "3":
-                print("O jogador 1 venceu!")
+                print(f"O {pseudonimo} venceu!")
 
             elif j1 == "2" and j2 == "2":
                 print("O jogo empatou.")
             elif j1 == "2" and j2 == "1":
-                print("O jogador 1 venceu!")
+                print(f"O {pseudonimo} venceu!")
             elif j1 == "2" and j2 == "3":
-                print("O jogador 2 venceu!")
+                print(f"O {pseudonimoF} venceu!")
 
             elif j1 == "3" and j2 == "3":
                 print("O jogo empatou.")
             elif j1 == "3" and j2 == "1":
-                print("O jogador 2 venceu!")
+                print(f"O {pseudonimoF} venceu!")
             else:
-                print("O jogador 1 venceu!")
+                print(f"O {pseudonimo} venceu!")
 
         if quantJog > 1:
             repeatF = "s"

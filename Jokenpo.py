@@ -46,7 +46,7 @@ print(pyfiglet.figlet_format("Jokenpo", font="larry3d")) # Título usando biblio
 print("1. Humano X Humano")
 print("2. Humano X Computador")
 print("3. Computador X Computador")
-print("4. 2v2 (W.I.P. / Alguém faz o 2v2 pfv)")
+print("4. 2v2 (W.I.P.)")
 print("5. Battle Royale (W.I.P.)\n")
 
 while modalidade != "1" and modalidade != "2" and modalidade != "3" and modalidade != "4" and modalidade != "5":
@@ -56,6 +56,7 @@ while modalidade != "1" and modalidade != "2" and modalidade != "3" and modalida
 
 print("\033[H\033[J", end="") # Limpa a tela do terminal
 
+# Modo Humano X Humano
 if modalidade == "1":
     while repeatF == "s":
         repeat = ""
@@ -227,6 +228,7 @@ if modalidade == "1":
             else:
                 print("Não é uma possibilidade, insira novamente.")
 
+# Modo Humano X Computador
 elif modalidade == "2":
     while repeatF == "s":
         repeat = ""
@@ -396,6 +398,7 @@ elif modalidade == "2":
             else:
                 print("Não é uma possibilidade, insira novamente.")
 
+# Modo Computador x Computador
 elif modalidade == "3":
     while repeatF == "s":
         repeat = ""
@@ -563,7 +566,6 @@ elif modalidade == "3":
             else:
                 print("Não é uma possibilidade, insira novamente.")
 
-
 # Modo 2v2
 elif modalidade == "4":
     while repeatF == "s":
@@ -671,8 +673,7 @@ elif modalidade == "4":
 
         repeatF = input("\nOutra rodada? (s/n): ")
 
-#Modo Battle-Royale
-
+# Modo Battle Royale
 else:
     while repeatF == "s":
         pedra = 0
@@ -692,6 +693,7 @@ else:
 
         print("\033[H\033[J", end="") # Limpa a tela do terminal
 
+        # Quando tiver mais que dois jogadores
         if quantJog > 2:
             for i in range(1, quantJog+1):
                 pseudonimo = input("Insira seu nome: ")
@@ -774,6 +776,7 @@ else:
                 print(f"Os sobreviventes são: {nomesPedra}, {nomesTesoura}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
         
+        # Quando restarem apenas 2 jogadores
         elif quantJog == 2:
             pseudonimo = input("Insira seu nome: ")
             while j1 != "1" and j1 != "2" and j1 != "3":

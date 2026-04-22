@@ -87,46 +87,46 @@ if modalidade == "1":
         if j1 == "1" and j2 == "1":
             print("   O            O\n  /|\✊      ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "1" and j2 == "2":
             print("   O            O\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 2 venceu!")
+            print("\033[1mO jogador 2 venceu!\033[0m")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
             print("   O            O\n  /|\✊      ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 1 venceu!")
+            print("\033[1mO jogador 1 venceu!\033[0m")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
             print("   O            O\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "2" and j2 == "1":
             print("   O            O\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 1 venceu!")
+            print("\033[1mO jogador 1 venceu!\033[0m")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
             print("   O            O\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 2 venceu!")
+            print("\033[1mO jogador 2 venceu!\033[0m")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
             print("   O            O\n  /|\✌       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "3" and j2 == "1":
             print("   O            O\n  /|\✌       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 2 venceu!")
+            print("\033[1mO jogador 2 venceu!\033[0m")
             vJ2 += 1
         else:
             print("   O            O\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador 1 venceu!")
+            print("\033[1mO jogador 1 venceu!\033[0m")
             vJ1 += 1
 
         if j1 == "1":
@@ -194,46 +194,46 @@ elif modalidade == "2":
         if j1 == "1" and j2 == "1":
             print("   O           📺\n  /|\✊      ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "1" and j2 == "2":
             print("   O           📺\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador venceu!")
+            print("\033[1mO computador venceu!\033[0m")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
             print("   O           📺\n  /|\✊      ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador venceu!")
+            print("\033[1mO jogador venceu!\033[0m")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
             print("   O           📺\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "2" and j2 == "1":
             print("   O           📺\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador venceu!")
+            print("\033[1mO jogador venceu!\033[0m")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
             print("   O           📺\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador venceu!")
+            print("\033[1mO computador venceu!\033[0m")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
             print("   O           📺\n  /|\✌       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "3" and j2 == "1":
             print("   O           📺\n  /|\✌       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador venceu!")
+            print("\033[1mO computador venceu!\033[0m")
             vJ2 += 1
         else:
             print("   O           📺\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogador venceu!")
+            print("\033[1mO jogador venceu!\033[0m")
             vJ1 += 1
 
         if j1 == "1":
@@ -299,46 +299,46 @@ elif modalidade == "3":
         if j1 == "1" and j2 == "1":
             print("  📺           📺\n  /|\✊      ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "1" and j2 == "2":
             print("  📺           📺\n  /|\✊      🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 2 venceu!")
+            print("\033[1mO computador 2 venceu!\033[0m")
             vJ2 += 1
         elif j1 == "1" and j2 == "3":
             print("  📺           📺\n  /|\✊      ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 1 venceu!")
+            print("\033[1mO computador 1 venceu!\033[0m")
             vJ1 += 1
 
         elif j1 == "2" and j2 == "2":
             print("  📺           📺\n  /|\🖐️       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "2" and j2 == "1":
             print("  📺           📺\n  /|\🖐️       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 1 venceu!")
+            print("\033[1mO computador 1 venceu!\033[0m")
             vJ1 += 1
         elif j1 == "2" and j2 == "3":
             print("  📺           📺\n  /|\🖐️       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 2 venceu!")
+            print("\033[1mO computador 2 venceu!\033[0m")
             vJ2 += 1
 
         elif j1 == "3" and j2 == "3":
             print("  📺           📺\n  /|\✌       ✌ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O jogo empatou.")
+            print("\033[1mO jogo empatou.\033[0m")
         elif j1 == "3" and j2 == "1":
             print("  📺           📺\n  /|\✌       ✊/|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 2 venceu!")
+            print("\033[1mO computador 2 venceu!\033[0m")
             vJ2 += 1
         else:
             print("  📺           📺\n  /|\✌       🖐️ /|\ \n  / \          / \ ")
             time.sleep(0.5)
-            print("O computador 1 venceu!")
+            print("\033[1mO computador 1 venceu!\033[0m")
             vJ1 += 1
 
         if j1 == "1":

@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img width="186" height="74" alt="StickmanJokenpoBattle" src="https://github.com/user-attachments/assets/5954edb3-7016-4942-855f-192c895755ee" />
+
 [![licença](https://img.shields.io/badge/licen%C3%A7a-CC%20BY--NC%204.0-lightgrey?style=default&logo=creativecommons)](https://creativecommons.org/licenses/by-nc/4.0/)
 ![python](https://img.shields.io/badge/python-3.13/3.14-3776AB?style=default&logo=python&logoColor=white)
 

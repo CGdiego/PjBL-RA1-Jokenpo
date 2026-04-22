@@ -468,13 +468,13 @@ elif modalidade == "4":
         time2_vivos = vivoJ3 + vivoJ4
 
         if time1_vivos > time2_vivos:
-            print("TIME 1 venceu")
+            print("\033[1mTIME 1 venceu\033[0m")
             vEquipe1 += 1
         elif time2_vivos > time1_vivos:
-            print("TIME 2 venceu")
+            print("\033[1mTIME 2 venceu\033[0m")
             vEquipe2 += 1
         else:
-            print("Empate")
+            print("\033[1mEmpate\033[0m")
 
         repeatF = input("\nOutra rodada? (s/n): ")
     else:

@@ -380,29 +380,49 @@ elif modalidade == "3":
 # Modo 2v2
 elif modalidade == "4":
     while repeatF == "s":
+        j1 = 0
+        j2 = 0
+        j3 = 0
+        j4 = 0
 
         print("TIME 1")
 
         while j1!="1" and j1!="2" and j1!="3":
             j1 = input("J1 escolha (1 Pedra 2 Papel 3 Tesoura): ")
-        alvoJ1 = input("J1 ataca (1)J3 ou (2)J4: ")
+        alvoJ1 = ""
+        while alvoJ1 != "1" and alvoJ1 != "2":
+            alvoJ1 = input("J1 ataca (1)J3 ou (2)J4: ")
+            if alvoJ1 != "1" and alvoJ1 != "2":
+                print("Não é uma possibilidade, insira novamente.")
         print("\033[H\033[J", end="")
 
         while j2!="1" and j2!="2" and j2!="3":
             j2 = input("J2 escolha (1 Pedra 2 Papel 3 Tesoura): ")
-        alvoJ2 = input("J2 ataca (1)J3 ou (2)J4: ")
+        alvoJ2 = ""
+        while alvoJ2 != "1" and alvoJ2 != "2":
+            alvoJ2 = input("J2 ataca (1)J3 ou (2)J4: ")
+            if alvoJ2 != "1" and alvoJ2 != "2":
+                print("Não é uma possibilidade, insira novamente.")
         print("\033[H\033[J", end="")
 
         print("TIME 2")
 
         while j3!="1" and j3!="2" and j3!="3":
             j3 = input("J3 escolha (1 Pedra 2 Papel 3 Tesoura): ")
-        alvoJ3 = input("J3 ataca (1)J1 ou (2)J2: ")
+        alvoJ3 = ""
+        while alvoJ3 != "1" and alvoJ3 != "2":
+            alvoJ3 = input("J3 ataca (1)J1 ou (2)J2: ")
+            if alvoJ3 != "1" and alvoJ3 != "2":
+                print("Não é uma possibilidade, insira novamente.")
         print("\033[H\033[J", end="")
 
         while j4!="1" and j4!="2" and j4!="3":
             j4 = input("J4 escolha (1 Pedra 2 Papel 3 Tesoura): ")
-        alvoJ4 = input("J4 ataca (1)J1 ou (2)J2: ")
+        alvoJ4 = ""
+        while alvoJ4 != "1" and alvoJ4 != "2":
+            alvoJ4 = input("J4 ataca (1)J1 ou (2)J2: ")
+            if alvoJ4 != "1" and alvoJ4 != "2":
+                print("Não é uma possibilidade, insira novamente.")
         print("\033[H\033[J", end="")
 
         vivoJ1 = True

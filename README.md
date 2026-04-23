@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="220" height="88" alt="StickmanJokenpoBattle" src="https://github.com/user-attachments/assets/5954edb3-7016-4942-855f-192c895755ee" />
+<img width="186" height="74" alt="StickmanJokenpoBattle" src="https://github.com/user-attachments/assets/5954edb3-7016-4942-855f-192c895755ee" />
 
 ```
  

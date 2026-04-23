@@ -146,4 +146,4 @@ python main.py
 
 ## Licença
 
-Distribuído sob a licença [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — uso não comercial com atribuição.
+Distribuído sob a licença [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) - uso não comercial com atribuição.

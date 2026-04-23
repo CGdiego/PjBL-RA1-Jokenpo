@@ -8,14 +8,14 @@
  
 ```
 
-![Python](https://img.shields.io/badge/Python-3.13%20%7C%203.14-1e1e2e?style=for-the-badge&logo=python&logoColor=00d4ff)
-![Plataforma](https://img.shields.io/badge/Plataforma-Windows-1e1e2e?style=for-the-badge&logo=windows&logoColor=00aaff)
-![Status](https://img.shields.io/badge/Status-Concluído-1e1e2e?style=for-the-badge&logo=checkmarx&logoColor=39ff14)
-[![Licença](https://img.shields.io/badge/Licença-CC%20BY--NC%204.0-1e1e2e?style=for-the-badge&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
+![Python](https://img.shields.io/badge/Python-3.13%20%7C%203.14-1e1e2e?style=plastic&logo=python&logoColor=00d4ff)
+![Plataforma](https://img.shields.io/badge/Plataforma-Windows-1e1e2e?style=plastic&logo=windows&logoColor=00aaff)
+![Status](https://img.shields.io/badge/Status-Concluído-1e1e2e?style=plastic&logo=checkmarx&logoColor=39ff14)
+[![Licença](https://img.shields.io/badge/Licença-CC%20BY--NC%204.0-1e1e2e?style=plastic&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-![Modos](https://img.shields.io/badge/🎮%20Modos%20de%20Jogo-5-ff6e00?style=for-the-badge)
-![ASCII](https://img.shields.io/badge/🎨%20Animações-ASCII%20Art-bd00ff?style=for-the-badge)
-![Audio](https://img.shields.io/badge/🔊%20Áudio-winsound-00cfff?style=for-the-badge)
+![Modos](https://img.shields.io/badge/🎮%20Modos%20de%20Jogo-5-ff6e00?style=plastic)
+![ASCII](https://img.shields.io/badge/🎨%20Animações-ASCII%20Art-bd00ff?style=plastic)
+![Audio](https://img.shields.io/badge/🔊%20Áudio-winsound-00cfff?style=plastic)
 
 <br/>
 
@@ -69,12 +69,12 @@ Este projeto implementa o clássico **Pedra, Papel e Tesoura** em Python com **c
 
 <div align="center">
 
-![Validação](https://img.shields.io/badge/✔%20Validação%20de%20Input-1e1e2e?style=for-the-badge&logoColor=39ff14)
-![Anti-Cola](https://img.shields.io/badge/✔%20Anti--Cola%20(limpeza%20de%20tela)-1e1e2e?style=for-the-badge&logoColor=39ff14)
-![IA](https://img.shields.io/badge/✔%20IA%20Aleatória-1e1e2e?style=for-the-badge&logoColor=39ff14)
-![Eliminação](https://img.shields.io/badge/✔%20Sistema%20de%20Eliminação-1e1e2e?style=for-the-badge&logoColor=39ff14)
-![Figlet](https://img.shields.io/badge/✔%20Títulos%20ASCII%20(pyfiglet)-1e1e2e?style=for-the-badge&logoColor=39ff14)
-![Som](https://img.shields.io/badge/✔%20Efeitos%20Sonoros-1e1e2e?style=for-the-badge&logoColor=39ff14)
+![Validação](https://img.shields.io/badge/✔%20Validação%20de%20Input-1e1e2e?style=plastic&logoColor=39ff14)
+![Anti-Cola](https://img.shields.io/badge/✔%20Anti--Cola%20(limpeza%20de%20tela)-1e1e2e?style=plastic&logoColor=39ff14)
+![IA](https://img.shields.io/badge/✔%20IA%20Aleatória-1e1e2e?style=plastic&logoColor=39ff14)
+![Eliminação](https://img.shields.io/badge/✔%20Sistema%20de%20Eliminação-1e1e2e?style=plastic&logoColor=39ff14)
+![Figlet](https://img.shields.io/badge/✔%20Títulos%20ASCII%20(pyfiglet)-1e1e2e?style=plastic&logoColor=39ff14)
+![Som](https://img.shields.io/badge/✔%20Efeitos%20Sonoros-1e1e2e?style=plastic&logoColor=39ff14)
 
 </div>
 
@@ -199,11 +199,11 @@ elif pedra > papel and pedra > tesoura:
 
 | Biblioteca | Função | Badge |
 |:---:|:---|:---:|
-| `random` | Geração de jogadas do computador | ![random](https://img.shields.io/badge/random-built--in-1e1e2e?style=flat-square&logoColor=white) |
-| `pyfiglet` | Títulos estilizados em ASCII art | ![pyfiglet](https://img.shields.io/badge/pyfiglet-pip-bd00ff?style=flat-square) |
-| `winsound` | Efeitos sonoros e música (Windows) | ![winsound](https://img.shields.io/badge/winsound-built--in-0078d4?style=flat-square&logo=windows) |
-| `time` | Delays dramáticos entre transições | ![time](https://img.shields.io/badge/time-built--in-1e1e2e?style=flat-square) |
-| ANSI Escape | Limpeza e controle do terminal | ![ansi](https://img.shields.io/badge/ANSI-escape%20codes-39ff14?style=flat-square) |
+| `random` | Geração de jogadas do computador | ![random](https://img.shields.io/badge/random-built--in-1e1e2e?style=plastic&logoColor=white) |
+| `pyfiglet` | Títulos estilizados em ASCII art | ![pyfiglet](https://img.shields.io/badge/pyfiglet-pip-bd00ff?style=plastic) |
+| `winsound` | Efeitos sonoros e música (Windows) | ![winsound](https://img.shields.io/badge/winsound-built--in-0078d4?style=plastic&logo=windows) |
+| `time` | Delays dramáticos entre transições | ![time](https://img.shields.io/badge/time-built--in-1e1e2e?style=plastic) |
+| ANSI Escape | Limpeza e controle do terminal | ![ansi](https://img.shields.io/badge/ANSI-escape%20codes-39ff14?style=plastic) |
 
 </div>
 
@@ -227,8 +227,8 @@ python main.py
 
 <div align="center">
 
-![Req](https://img.shields.io/badge/Requer-Python%203.13%2B-1e1e2e?style=for-the-badge&logo=python&logoColor=00d4ff)
-![SO](https://img.shields.io/badge/Som%20apenas%20em-Windows-1e1e2e?style=for-the-badge&logo=windows&logoColor=ff6b6b)
+![Req](https://img.shields.io/badge/Requer-Python%203.13%2B-1e1e2e?style=plastic&logo=python&logoColor=00d4ff)
+![SO](https://img.shields.io/badge/Som%20apenas%20em-Windows-1e1e2e?style=plastic&logo=windows&logoColor=ff6b6b)
 
 </div>
 
@@ -261,7 +261,7 @@ main.py
 
 <div align="center">
 
-[![CC BY-NC 4.0](https://img.shields.io/badge/Creative%20Commons-BY--NC%204.0-1e1e2e?style=for-the-badge&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![CC BY-NC 4.0](https://img.shields.io/badge/Creative%20Commons-BY--NC%204.0-1e1e2e?style=plastic&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Uso livre para fins **não comerciais** com atribuição aos autores.
 

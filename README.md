@@ -25,7 +25,7 @@ Jogo de Pedra, Papel e Tesoura em Python com 5 modos de jogo. Tem animações em
 ![IA](https://img.shields.io/badge/✔%20IA%20Aleatória-1e1e2e?style=plastic)
 ![Eliminação](https://img.shields.io/badge/✔%20Sistema%20de%20Eliminação-1e1e2e?style=plastic)
 ![Figlet](https://img.shields.io/badge/✔%20Títulos%20ASCII-1e1e2e?style=plastic)
-![Som](https://img.shields.io/badge/✔%20Efeitos%20Sonoros-1e1e2e?style=plastic)
+![Som](https://img.shields.io/badge/✔%20Músicas-1e1e2e?style=plastic)
 
 </div>
 

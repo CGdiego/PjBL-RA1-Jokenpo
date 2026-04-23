@@ -538,13 +538,23 @@ else:
                 
                 if j1 == "1":
                     pedra += 1
-                    nomesPedra += f"{pseudonimo}, "
+                    if nomesPedra == "":
+                        nomesPedra = pseudonimo
+                    else:
+                        nomesPedra = nomesPedra + ", " + pseudonimo
                 elif j1 == "2":
                     papel += 1
-                    nomesPapel += f"{pseudonimo}, "
+                    if nomesPapel == "":
+                        nomesPapel = pseudonimo
+                    else:
+                        nomesPapel = nomesPapel + ", " + pseudonimo
                 else:
                     tesoura += 1
-                    nomesTesoura += f"{pseudonimo}, "
+                    if nomesTesoura == "":
+                        nomesTesoura = pseudonimo
+                    else:
+                        nomesTesoure = nomesTesoura + ", " + pseudonimo
+    
                 j1 = ""
                 
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
@@ -556,57 +566,57 @@ else:
                 print("Todos os times empataram, nada acontece. :(")
 
             elif pedra > papel and pedra > tesoura:
-                print(f"Pedra domina, logo, {tesoura} tesoura(s) foram eliminadas: {nomesTesoura}")
+                print(f"Pedra domina, logo, {tesoura} tesoura(s) foram eliminadas: {nomesTesoura}.")
                 quantJog -= tesoura
                 tesoura = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPedra}, {nomesPapel}.")
+                print(f"Os sobreviventes são: {nomesPedra} {nomesPapel}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif papel > pedra and papel > tesoura:
-                print(f"Papel domina, logo, {pedra} pedra(s) foram eliminadas: {nomesPedra}")
+                print(f"Papel domina, logo, {pedra} pedra(s) foram eliminadas: {nomesPedra}.")
                 quantJog -= pedra
                 pedra = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPapel}, {nomesTesoura}.")
+                print(f"Os sobreviventes são: {nomesPapel} {nomesTesoura}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif tesoura > pedra and tesoura > papel:
-                print(f"Tesoura domina, logo, {papel} papel(éis) foram eliminados: {nomesPapel}")
+                print(f"Tesoura domina, logo, {papel} papel(éis) foram eliminados: {nomesPapel}.")
                 quantJog -= papel
                 papel = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPedra}, {nomesTesoura}.")
+                print(f"Os sobreviventes são: {nomesPedra} {nomesTesoura}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra == papel and tesoura != pedra:
-                print(f"Pedra e papel empataram, logo, {tesoura} tesoura(s) foram eliminadas: {nomesTesoura}")
+                print(f"Pedra e papel empataram, logo, {tesoura} tesoura(s) foram eliminadas: {nomesTesoura}.")
                 quantJog -= tesoura
                 tesoura = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPedra}, {nomesPapel}.")
+                print(f"Os sobreviventes são: {nomesPedra} {nomesPapel}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif papel == tesoura and pedra != papel:
-                print(f"Papel e tesoura empataram, logo, {pedra} pedra(s) foram eliminadas: {nomesPedra}")
+                print(f"Papel e tesoura empataram, logo, {pedra} pedra(s) foram eliminadas: {nomesPedra}.")
                 quantJog -= pedra
                 pedra = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPapel}, {nomesTesoura}.")
+                print(f"Os sobreviventes são: {nomesPapel} {nomesTesoura}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra == tesoura and papel != pedra:
-                print(f"Pedra e tesoura empataram, logo, {papel} papel(éis) foram eliminados: {nomesPapel}")
+                print(f"Pedra e tesoura empataram, logo, {papel} papel(éis) foram eliminados: {nomesPapel}.")
                 quantJog -= papel
                 papel = 0
                 time.sleep(5)
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
-                print(f"Os sobreviventes são: {nomesPedra}, {nomesTesoura}.")
+                print(f"Os sobreviventes são: {nomesPedra} {nomesTesoura}.")
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
         
         # Quando restarem apenas 2 jogadores

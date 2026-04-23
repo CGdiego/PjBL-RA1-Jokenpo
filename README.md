@@ -1,92 +1,41 @@
+<h1 align="center">✊ Jokenpô Battle ✋</h1>
+
 <div align="center">
 
-<img width="220" height="88" alt="StickmanJokenpoBattle" src="https://github.com/user-attachments/assets/5954edb3-7016-4942-855f-192c895755ee" />
+<img width="186" height="74" alt="StickmanJokenpoBattle" src="https://github.com/user-attachments/assets/5954edb3-7016-4942-855f-192c895755ee" />
 
-```
- 
-   ✊  J O K E N P Ô   B A T T L E   S Y S T E M  
- 
-```
+<br/><br/>
 
-![Python](https://img.shields.io/badge/Python-3.13%20%7C%203.14-1e1e2e?style=plastic&logo=python&logoColor=00d4ff)
-![Plataforma](https://img.shields.io/badge/Plataforma-Windows-1e1e2e?style=plastic&logo=windows&logoColor=00aaff)
-![Status](https://img.shields.io/badge/Status-Concluído-1e1e2e?style=plastic&logo=checkmarx&logoColor=39ff14)
+![Python](https://img.shields.io/badge/Python-3.13%20|%203.14-1e1e2e?style=plastic&logo=python&logoColor=00d4ff)
+![Status](https://img.shields.io/badge/Status-Concluído-1e1e2e?style=plastic&logoColor=39ff14)
 [![Licença](https://img.shields.io/badge/Licença-CC%20BY--NC%204.0-1e1e2e?style=plastic&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-![Modos](https://img.shields.io/badge/🎮%20Modos%20de%20Jogo-5-ff6e00?style=plastic)
-![ASCII](https://img.shields.io/badge/🎨%20Animações-ASCII%20Art-bd00ff?style=plastic)
-![Audio](https://img.shields.io/badge/🔊%20Áudio-winsound-00cfff?style=plastic)
-
-<br/>
-
-> **PjBL RA1** — *Daniel Godri · Diego Soares · João Victor M. B.*
+**PjBL RA1 — Daniel Godri · Diego Soares · João Victor M. B.**
 
 </div>
 
-<br/>
+---
+
+Jogo de Pedra, Papel e Tesoura em Python com 5 modos de jogo. Tem animações em ASCII, títulos com pyfiglet, efeitos sonoros com winsound e centenas de linhas de código.
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Pedra, Papel e Tesoura reimaginado em Python puro —       │
-│   com 5 modos de batalha, animações no terminal,            │
-│   trilha sonora e lógica de eliminação em grupo.            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+![Validação](https://img.shields.io/badge/✔%20Validação%20de%20Input-1e1e2e?style=plastic)
+![Anti-Cola](https://img.shields.io/badge/✔%20Anti--Cola-1e1e2e?style=plastic)
+![IA](https://img.shields.io/badge/✔%20IA%20Aleatória-1e1e2e?style=plastic)
+![Eliminação](https://img.shields.io/badge/✔%20Sistema%20de%20Eliminação-1e1e2e?style=plastic)
+![Figlet](https://img.shields.io/badge/✔%20Títulos%20ASCII-1e1e2e?style=plastic)
+![Som](https://img.shields.io/badge/✔%20Efeitos%20Sonoros-1e1e2e?style=plastic)
 
 </div>
 
 ---
 
-## ◈ Índice
+## Modos de Jogo
 
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [Funcionalidades](#-funcionalidades)
-- [Modos de Jogo](#-modos-de-jogo)
-- [Tecnologias](#-tecnologias)
-- [Como Executar](#-como-executar)
-- [Estrutura do Fluxo](#-estrutura-do-fluxo)
-- [Licença](#-licença)
+### 1. Humano × Humano
 
----
-
-## ◈ Sobre o Projeto
-
-Este projeto implementa o clássico **Pedra, Papel e Tesoura** em Python com **cinco modos de jogo** completamente distintos. Construído do zero com centenas de linhas de código, o sistema oferece uma experiência de terminal imersiva com:
-
-- 🎨 Títulos animados em ASCII com **pyfiglet**
-- 🔊 Efeitos sonoros e trilha via **winsound**
-- 🖥️ Limpeza e controle de terminal com **sequências ANSI**
-- 🎲 Lógica de aleatoriedade com **random**
-- ⏱️ Tempo entre transições com **time**
-
----
-
-## ◈ Funcionalidades
-
-<div align="center">
-
-![Validação](https://img.shields.io/badge/✔%20Validação%20de%20Input-1e1e2e?style=plastic&logoColor=39ff14)
-![Anti-Cola](https://img.shields.io/badge/✔%20Anti--Cola%20(limpeza%20de%20tela)-1e1e2e?style=plastic&logoColor=39ff14)
-![IA](https://img.shields.io/badge/✔%20IA%20Aleatória-1e1e2e?style=plastic&logoColor=39ff14)
-![Eliminação](https://img.shields.io/badge/✔%20Sistema%20de%20Eliminação-1e1e2e?style=plastic&logoColor=39ff14)
-![Figlet](https://img.shields.io/badge/✔%20Títulos%20ASCII%20(pyfiglet)-1e1e2e?style=plastic&logoColor=39ff14)
-![Som](https://img.shields.io/badge/✔%20Efeitos%20Sonoros-1e1e2e?style=plastic&logoColor=39ff14)
-
-</div>
-
----
-
-## ◈ Modos de Jogo
-
-### ❶ Humano × Humano
-
-Dois jogadores se revezam no mesmo terminal. O sistema **valida cada entrada** antes de prosseguir, garantindo que apenas `1` (Pedra), `2` (Papel) ou `3` (Tesoura) sejam aceitos. Entradas inválidas são rejeitadas com mensagem de erro e o jogador é solicitado a tentar novamente.
-
-> Esta é a lógica central do jogo — todos os outros modos derivam dela.
+Dois jogadores se revezam no mesmo terminal. O jogo valida cada entrada e rejeita qualquer coisa fora de `1`, `2` ou `3`.
 
 ```python
 while j1 != "1" and j1 != "2" and j1 != "3":
@@ -95,178 +44,106 @@ while j1 != "1" and j1 != "2" and j1 != "3":
         print("Não é uma possibilidade, insira novamente.\n")
 ```
 
-```
-  FLUXO:   [ Input ] ──► [ Validação ] ──► [ Comparação ] ──► [ Resultado ]
-                              │
-                         entrada inválida?
-                              │
-                         volta ao Input
+Essa lógica de validação é a base de todos os outros modos, adaptada conforme a necessidade de cada um.
+
+---
+
+### 2. Humano × Computador
+
+A diferença aqui é que a jogada do computador é gerada aleatoriamente com `random.randint`, depois convertida para string para ficar no mesmo formato do input do jogador.
+
+```python
+j2 = random.randint(1, 3)  # escolha aleatória
+j2 = str(j2)               # converte para string
 ```
 
 ---
 
-### ❷ Humano × Computador
+### 3. Computador × Computador
 
-O jogador enfrenta uma **IA que decide aleatoriamente** usando o módulo `random`. A jogada do computador é gerada com `randint(1, 3)` e convertida para `string` para manter uniformidade com o input humano.
-
-```python
-j2 = random.randint(1, 3)  # Gera um inteiro aleatório: 1, 2 ou 3
-j2 = str(j2)               # Converte para string — mesmo formato do input humano
-```
-
-> O computador não tem memória das rodadas anteriores — cada jogada é **completamente independente**, tornando o resultado estatisticamente justo.
-
----
-
-### ❸ Computador × Computador
-
-Modo autônomo onde **dois agentes de IA se enfrentam** sem intervenção humana. Aplica a lógica do Modo ❷ duas vezes, uma para cada jogador. Ideal para demonstrações e testes de fluxo do jogo.
+Aplica a mesma lógica do Modo 2 para os dois jogadores. Partida totalmente automática, útil para testes e demonstrações.
 
 ```python
-j1 = str(random.randint(1, 3))  # Jogador 1 — IA
-j2 = str(random.randint(1, 3))  # Jogador 2 — IA
+j1 = str(random.randint(1, 3))
+j2 = str(random.randint(1, 3))
 ```
 
 ---
 
-### ❹ 2v2 — Batalha em Times
+### 4. 2v2
 
-O modo mais estratégico: cada jogador escolhe sua **jogada** *e* o **alvo** que deseja atacar no time adversário. A tela é **apagada entre os turnos** para que nenhum jogador veja a escolha dos outros.
+Além da jogada (Pedra/Papel/Tesoura), cada jogador também escolhe **qual adversário atacar**. A tela é limpa entre os turnos para ninguém ver o que o outro digitou.
 
 ```python
-# ── Fase 1: Escolha da jogada ──────────────────────────────────────
+# Escolha da jogada
 while j1 != "1" and j1 != "2" and j1 != "3":
     j1 = input("J1 escolha (1 Pedra  2 Papel  3 Tesoura): ")
-    if j1 != "1" and j1 != "2" and j1 != "3":
-        print("Não é uma possibilidade, insira novamente.")
 
-# ── Fase 2: Escolha do alvo ────────────────────────────────────────
+# Escolha do alvo
 alvoJ1 = ""
 while alvoJ1 != "1" and alvoJ1 != "2":
     alvoJ1 = input("J1 ataca (1) J3 ou (2) J4: ")
     if alvoJ1 != "1" and alvoJ1 != "2":
         print("Não é uma possibilidade, insira novamente.")
 
-# ── Fase 3: Limpa a tela antes do próximo jogador ─────────────────
-print("\033[H\033[J", end="")  # Sequência ANSI — apaga o terminal
-```
-
-```
-  TIME A         vs         TIME B
-  ┌─────────┐             ┌─────────┐
-  │ J1 ──────── ataca ──►│ J3 / J4 │
-  │ J2 ──────── ataca ──►│ J3 / J4 │
-  └─────────┘             └─────────┘
+# Limpa a tela antes do próximo jogador
+print("\033[H\033[J", end="")
 ```
 
 ---
 
-### ❺ Battle Royale ⚔️
+### 5. Battle Royale ⚔️
 
-O modo épico: **N jogadores** entram, apenas um sai. A cada rodada, os jogadores escolhem Pedra, Papel ou Tesoura. O **grupo majoritário** elimina o grupo perdedor. O jogo continua até sobrar um único campeão — ou um empate entre grupos iguais.
+Vários jogadores entram e o grupo majoritário elimina o perdedor a cada rodada, até sobrar um campeão.
 
 ```python
 elif pedra > papel and pedra > tesoura:
-    # Pedra é maioria — Tesoura é eliminada
     print(f"Pedra domina, logo, {tesoura} tesoura(s) foram eliminadas: {nomesTesoura}.")
 
-    quantJog -= tesoura   # Remove eliminados da contagem total
-    tesoura = 0           # Zera o grupo Tesoura desta rodada
+    quantJog -= tesoura
+    tesoura = 0
 
-    time.sleep(5)                      # Pausa dramática antes de limpar
-    print("\033[H\033[J", end="")      # Limpa o terminal
+    time.sleep(5)
+    print("\033[H\033[J", end="")
 
     print(f"Os sobreviventes são: {nomesPedra} {nomesPapel}.")
     repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 ```
 
-```
-  RODADA 1        RODADA 2        FINAL
-  ──────────      ──────────      ──────────
-  6 jogadores ──► 4 sobreviventes ──► 🏆 Campeão
-  2 eliminados    2 eliminados
-  (tesoura)       (papel)
-```
-
-> As três combinações de eliminação são tratadas:
-> `Pedra → Tesoura` · `Papel → Pedra` · `Tesoura → Papel`
+As três combinações de eliminação são tratadas: `Pedra → Tesoura`, `Papel → Pedra` e `Tesoura → Papel`.
 
 ---
 
-## ◈ Tecnologias
+## Tecnologias
 
-<div align="center">
-
-| Biblioteca | Função | Badge |
-|:---:|:---|:---:|
-| `random` | Geração de jogadas do computador | ![random](https://img.shields.io/badge/random-built--in-1e1e2e?style=plastic&logoColor=white) |
-| `pyfiglet` | Títulos estilizados em ASCII art | ![pyfiglet](https://img.shields.io/badge/pyfiglet-pip-bd00ff?style=plastic) |
-| `winsound` | Efeitos sonoros e música (Windows) | ![winsound](https://img.shields.io/badge/winsound-built--in-0078d4?style=plastic&logo=windows) |
-| `time` | Delays dramáticos entre transições | ![time](https://img.shields.io/badge/time-built--in-1e1e2e?style=plastic) |
-| ANSI Escape | Limpeza e controle do terminal | ![ansi](https://img.shields.io/badge/ANSI-escape%20codes-39ff14?style=plastic) |
-
-</div>
+| Biblioteca | Uso |
+|---|---|
+| `random` | Jogadas do computador |
+| `pyfiglet` | Títulos em ASCII art |
+| `winsound` | Efeitos sonoros (Windows) |
+| `time` | Delays entre animações |
+| ANSI Escape Codes | Limpeza de tela no terminal |
 
 ---
 
-## ◈ Como Executar
+## Como Executar
 
 ```bash
-# 1. Clone o repositório
+# Clone o repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
-
-# 2. Entre na pasta do projeto
 cd seu-repositorio
 
-# 3. Instale a única dependência externa
+# Instale a dependência
 pip install pyfiglet
 
-# 4. Inicie o jogo
+# Rode o jogo
 python main.py
 ```
 
-<div align="center">
-
-![Req](https://img.shields.io/badge/Requer-Python%203.13%2B-1e1e2e?style=plastic&logo=python&logoColor=00d4ff)
-![SO](https://img.shields.io/badge/Som%20apenas%20em-Windows-1e1e2e?style=plastic&logo=windows&logoColor=ff6b6b)
-
-</div>
-
-> ⚠️ **Nota:** os efeitos sonoros via `winsound` são exclusivos do Windows. O jogo roda normalmente em outros sistemas, mas sem áudio.
+> ⚠️ Os efeitos sonoros com `winsound` funcionam **apenas no Windows**.
 
 ---
 
-## ◈ Estrutura do Fluxo
+## Licença
 
-```
-main.py
-  │
-  ├── Menu Principal
-  │     ├── [1] Humano × Humano
-  │     ├── [2] Humano × Computador
-  │     ├── [3] Computador × Computador
-  │     ├── [4] 2v2
-  │     └── [5] Battle Royale
-  │
-  ├── Módulo de Input ──► validação em loop até entrada válida
-  ├── Módulo de IA ─────► random.randint(1, 3)
-  ├── Módulo de Confronto ► comparação e cálculo do vencedor
-  ├── Módulo de Display ──► pyfiglet + ANSI + ASCII art
-  └── Módulo de Áudio ───► winsound (Windows only)
-```
-
----
-
-## ◈ Licença
-
-<div align="center">
-
-[![CC BY-NC 4.0](https://img.shields.io/badge/Creative%20Commons-BY--NC%204.0-1e1e2e?style=plastic&logo=creativecommons&logoColor=ff79c6)](https://creativecommons.org/licenses/by-nc/4.0/)
-
-Uso livre para fins **não comerciais** com atribuição aos autores.
-
-<br/>
-
-*Made with 🖤 by Daniel Godri · Diego Soares · João Victor M. B.*
-
-</div>
+Distribuído sob a licença [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — uso não comercial com atribuição.

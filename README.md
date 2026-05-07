@@ -130,14 +130,11 @@ As três combinações de eliminação são tratadas: `Pedra → Tesoura`, `Pape
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-
-# Instale a dependência
-pip install pyfiglet
+git clone https://github.com/CGdiego/PjBL-RA1-Jokenpo
+cd PjBL-RA1-Jokenpo
 
 # Rode o jogo
-python main.py
+python Jokenpo.py
 ```
 
 > ⚠️ Os efeitos sonoros com `winsound` funcionam **apenas no Windows**.

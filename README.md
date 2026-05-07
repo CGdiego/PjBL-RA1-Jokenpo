@@ -137,7 +137,7 @@ cd PjBL-RA1-Jokenpo
 python Jokenpo.py
 ```
 
-> ⚠️ Os efeitos sonoros com `winsound` funcionam **apenas no Windows**.
+> ⚠️ Os efeitos sonoros com `winsound` funcionam **apenas no Windows**. Então caso esteja utilizando outro sistema operacional, use a versão sem `winsound` na pasta `Extra`.
 
 ---
 

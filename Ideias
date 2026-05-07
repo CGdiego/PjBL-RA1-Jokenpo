@@ -1,4 +1,4 @@
 - Texto colorido.
-- Efeitos sonoros (precisaria do pygame ao invés do windosund).
-- README.md (MUITO IMPORTANTE, VALE NOTA)
-- No final do projeto fazer uma versão sem winsound pra caso o PC da pessoa não seja Windows.
+- Efeitos sonoros (precisaria do pygame ao invés do winsound).
+- Fazer animações em ASCII pro 2v2.
+- Fazer animações com emojis no Battle Royale.

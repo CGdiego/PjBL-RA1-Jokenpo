@@ -41,7 +41,7 @@ Dois jogadores se revezam no mesmo terminal. O jogo valida cada entrada e rejeit
 while j1 != "1" and j1 != "2" and j1 != "3":
     j1 = input("Jogador 1, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
     if j1 != "1" and j1 != "2" and j1 != "3":
-        print("Não é uma possibilidade, insira novamente.\n")
+        print("\nNão é uma possibilidade, insira novamente.\n")
 ```
 
 Essa lógica de validação é a base de todos os outros modos, adaptada conforme a necessidade de cada um.

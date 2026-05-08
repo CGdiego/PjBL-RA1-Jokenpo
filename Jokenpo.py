@@ -14,15 +14,15 @@ elif musica == 2:
 else:
     winsound.PlaySound("sounds/music3.wav", winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
 
-j1 = 0
+j1 = ""
 nome1 = ""
 vJ1 = 0
-j2 = 0
+j2 = ""
 nome2 = ""
 vJ2 = 0
-j3 = 0
+j3 = ""
 nome3 = ""
-j4 = 0
+j4 = ""
 nome4 = ""
 equipe1 = ""
 equipe2 = ""
@@ -380,10 +380,10 @@ elif modalidade == "3":
 # Modo 2v2
 elif modalidade == "4":
     while repeatF == "s":
-        j1 = 0
-        j2 = 0
-        j3 = 0
-        j4 = 0
+        j1 = ""
+        j2 = ""
+        j3 = ""
+        j4 = ""
 
         print("TIME 1")
 

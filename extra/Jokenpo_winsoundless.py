@@ -4,15 +4,15 @@ import time
 import random
 import pyfiglet
 
-j1 = 0
+j1 = ""
 nome1 = ""
 vJ1 = 0
-j2 = 0
+j2 = ""
 nome2 = ""
 vJ2 = 0
-j3 = 0
+j3 = ""
 nome3 = ""
-j4 = 0
+j4 = ""
 nome4 = ""
 equipe1 = ""
 equipe2 = ""
@@ -370,10 +370,10 @@ elif modalidade == "3":
 # Modo 2v2
 elif modalidade == "4":
     while repeatF == "s":
-        j1 = 0
-        j2 = 0
-        j3 = 0
-        j4 = 0
+        j1 = ""
+        j2 = ""
+        j3 = ""
+        j4 = ""
 
         print("TIME 1")
 
@@ -555,12 +555,26 @@ else:
                 print("\033[H\033[J", end="") # Limpa a tela do terminal
 
             if quantJog == pedra or quantJog == papel or quantJog == tesoura:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Apenas um time foi escolhido, nada acontece. :(")
+                repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra == papel == tesoura:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print("Todos os times empataram, nada acontece. :(")
+                repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra > papel and pedra > tesoura:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("🪨          📄          💥")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Pedra domina, logo, {tesoura} tesoura(s) foi(ram) eliminada(s): {nomesTesoura}.")
                 quantJog -= tesoura
                 tesoura = 0
@@ -573,6 +587,12 @@ else:
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif papel > pedra and papel > tesoura:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("💥         📄          ✂️")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Papel domina, logo, {pedra} pedra(s) foi(ram) eliminada(s): {nomesPedra}.")
                 quantJog -= pedra
                 pedra = 0
@@ -585,6 +605,12 @@ else:
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif tesoura > pedra and tesoura > papel:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("🪨          💥          ✂️")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Tesoura domina, logo, {papel} papel(éis) foi(ram) eliminado(s): {nomesPapel}.")
                 quantJog -= papel
                 papel = 0
@@ -597,6 +623,12 @@ else:
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra == papel and tesoura != pedra:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("🪨          📄          💥")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Pedra e papel empataram, logo, {tesoura} tesoura(s) foi(ram) eliminada(s): {nomesTesoura}.")
                 quantJog -= tesoura
                 tesoura = 0
@@ -606,6 +638,12 @@ else:
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif papel == tesoura and pedra != papel:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("💥         📄          ✂️")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Papel e tesoura empataram, logo, {pedra} pedra(s) foi(ram) eliminada(s): {nomesPedra}.")
                 quantJog -= pedra
                 pedra = 0
@@ -615,6 +653,12 @@ else:
                 repeat = input("\nDigite qualquer coisa para ir para a próxima rodada.\n")
 
             elif pedra == tesoura and papel != pedra:
+                print("🪨          📄          ✂️")
+                time.sleep(5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
+                print("🪨          💥          ✂️")
+                time.sleep(0.5)
+                print("\033[H\033[J", end="") # Limpa a tela do terminal
                 print(f"Pedra e tesoura empataram, logo, {papel} papel(éis) foi(ram) eliminado(s): {nomesPapel}.")
                 quantJog -= papel
                 papel = 0
@@ -625,6 +669,7 @@ else:
         
         # Quando restarem apenas 2 jogadores
         elif quantJog == 2:
+            print("Rodada final!")
             pseudonimo = input("Insira seu nome: ")
             while j1 != "1" and j1 != "2" and j1 != "3":
                 j1 = input(f"\n{pseudonimo}, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
@@ -640,6 +685,7 @@ else:
 
             print("\033[H\033[J", end="") # Limpa a tela do terminal
 
+            print("Rodada final!")
             pseudonimoF = input("Insira seu nome: ")
             while j2 != "1" and j2 != "2" and j2 != "3":
                 j2 = input(f"\n{pseudonimoF}, escolha:\n'1' - Pedra\n'2' - Papel\n'3' - Tesoura\n")
